@@ -12,7 +12,35 @@
 		DA74915C1F4B123600A1F475 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA74915B1F4B123600A1F475 /* ViewController.m */; };
 		DA74915E1F4B123600A1F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA74915D1F4B123600A1F475 /* Assets.xcassets */; };
 		DA7491611F4B123600A1F475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA74915F1F4B123600A1F475 /* Main.storyboard */; };
+		DA74916F1F4B14BC00A1F475 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA74916E1F4B14BC00A1F475 /* Cocoa.framework */; };
+		DA7491771F4B14BD00A1F475 /* AppProxyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7491761F4B14BD00A1F475 /* AppProxyProvider.m */; };
+		DA74917B1F4B14BD00A1F475 /* AppProxyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA74916C1F4B14BC00A1F475 /* AppProxyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA7491811F4B15D900A1F475 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7491801F4B15D900A1F475 /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7491791F4B14BD00A1F475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7491491F4B123600A1F475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA74916B1F4B14BC00A1F475;
+			remoteInfo = AppProxyExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA74917F1F4B14BD00A1F475 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA74917B1F4B14BD00A1F475 /* AppProxyExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA7491511F4B123600A1F475 /* AppProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,13 @@
 		DA74915D1F4B123600A1F475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7491601F4B123600A1F475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA7491621F4B123600A1F475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA74916C1F4B14BC00A1F475 /* AppProxyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppProxyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74916E1F4B14BC00A1F475 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA7491741F4B14BD00A1F475 /* AppProxyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppProxyExtension.entitlements; sourceTree = "<group>"; };
+		DA7491751F4B14BD00A1F475 /* AppProxyProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppProxyProvider.h; sourceTree = "<group>"; };
+		DA7491761F4B14BD00A1F475 /* AppProxyProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppProxyProvider.m; sourceTree = "<group>"; };
+		DA7491781F4B14BD00A1F475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7491801F4B15D900A1F475 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA7491691F4B14BC00A1F475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA74916F1F4B14BC00A1F475 /* Cocoa.framework in Frameworks */,
+				DA7491811F4B15D900A1F475 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				DA7491531F4B123600A1F475 /* AppProxy */,
+				DA7491701F4B14BC00A1F475 /* AppProxyExtension */,
+				DA74916D1F4B14BC00A1F475 /* Frameworks */,
 				DA7491521F4B123600A1F475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7491511F4B123600A1F475 /* AppProxy.app */,
+				DA74916C1F4B14BC00A1F475 /* AppProxyExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +123,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA74916D1F4B14BC00A1F475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7491801F4B15D900A1F475 /* NetworkExtension.framework */,
+				DA74916E1F4B14BC00A1F475 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7491701F4B14BC00A1F475 /* AppProxyExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DA7491751F4B14BD00A1F475 /* AppProxyProvider.h */,
+				DA7491761F4B14BD00A1F475 /* AppProxyProvider.m */,
+				DA7491781F4B14BD00A1F475 /* Info.plist */,
+				DA7491731F4B14BD00A1F475 /* Supporting Files */,
+			);
+			path = AppProxyExtension;
+			sourceTree = "<group>";
+		};
+		DA7491731F4B14BD00A1F475 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7491741F4B14BD00A1F475 /* AppProxyExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,15 +161,34 @@
 				DA74914D1F4B123600A1F475 /* Sources */,
 				DA74914E1F4B123600A1F475 /* Frameworks */,
 				DA74914F1F4B123600A1F475 /* Resources */,
+				DA74917F1F4B14BD00A1F475 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA74917A1F4B14BD00A1F475 /* PBXTargetDependency */,
 			);
 			name = AppProxy;
 			productName = AppProxy;
 			productReference = DA7491511F4B123600A1F475 /* AppProxy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DA74916B1F4B14BC00A1F475 /* AppProxyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA74917C1F4B14BD00A1F475 /* Build configuration list for PBXNativeTarget "AppProxyExtension" */;
+			buildPhases = (
+				DA7491681F4B14BC00A1F475 /* Sources */,
+				DA7491691F4B14BC00A1F475 /* Frameworks */,
+				DA74916A1F4B14BC00A1F475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppProxyExtension;
+			productName = AppProxyExtension;
+			productReference = DA74916C1F4B14BC00A1F475 /* AppProxyExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +200,11 @@
 				ORGANIZATIONNAME = danilkorotenko;
 				TargetAttributes = {
 					DA7491501F4B123600A1F475 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QBPW9LPK8E;
+						ProvisioningStyle = Automatic;
+					};
+					DA74916B1F4B14BC00A1F475 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = QBPW9LPK8E;
 						ProvisioningStyle = Automatic;
@@ -126,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				DA7491501F4B123600A1F475 /* AppProxy */,
+				DA74916B1F4B14BC00A1F475 /* AppProxyExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +237,13 @@
 			files = (
 				DA74915E1F4B123600A1F475 /* Assets.xcassets in Resources */,
 				DA7491611F4B123600A1F475 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74916A1F4B14BC00A1F475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +260,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA7491681F4B14BC00A1F475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7491771F4B14BD00A1F475 /* AppProxyProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA74917A1F4B14BD00A1F475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA74916B1F4B14BC00A1F475 /* AppProxyExtension */;
+			targetProxy = DA7491791F4B14BD00A1F475 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA74915F1F4B123600A1F475 /* Main.storyboard */ = {
@@ -260,12 +383,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				INFOPLIST_FILE = AppProxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.AppProxy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -273,12 +398,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				INFOPLIST_FILE = AppProxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.AppProxy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		DA74917D1F4B14BD00A1F475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppProxyExtension/AppProxyExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				INFOPLIST_FILE = AppProxyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.AppProxy.AppProxyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA74917E1F4B14BD00A1F475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppProxyExtension/AppProxyExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				INFOPLIST_FILE = AppProxyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GTB.AppProxy.AppProxyExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -299,6 +456,14 @@
 			buildConfigurations = (
 				DA7491661F4B123600A1F475 /* Debug */,
 				DA7491671F4B123600A1F475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA74917C1F4B14BD00A1F475 /* Build configuration list for PBXNativeTarget "AppProxyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA74917D1F4B14BD00A1F475 /* Debug */,
+				DA74917E1F4B14BD00A1F475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
